@@ -5,11 +5,11 @@ import React from 'react'
     //return <h1>Hello Renuka </h1>
 //}
 
-const Greet = (props) => {
-console.log(props)
+const Greet = props => {
+const {name, heroName} = props
 return (
     <div>
-    <h1>Hello {props.name} space  {props.heroName}</h1>
+    <h1>Hello {name} space  {heroName}</h1>
     {props.children}
     </div>
 )
